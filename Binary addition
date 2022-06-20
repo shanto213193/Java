@@ -1,0 +1,19 @@
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter first number: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        String a = input.nextLine();
+        System.out.print("Enter second number: ");
+       String  b = input.nextLine();
+       
+         Integer A = Integer.valueOf(a,2);
+         Integer B = Integer.valueOf(b,2);
+         int add = A+B;
+         String sum = Integer.toBinaryString(add);
+        
+        System.out.println("SUM in Binary = "+sum);   
+    
+    } 
+    
+}
