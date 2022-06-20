@@ -1,0 +1,14 @@
+
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter your first number: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        int a = input.nextInt();
+        System.out.print("Enter your second number: ");
+        int b = input.nextInt();
+        System.out.printf("Divide = %d\n",a*b);
+    
+    } 
+    
+}
