@@ -1,0 +1,15 @@
+
+package PracticeSession;
+
+
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter radius: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        double r = input.nextDouble();
+        System.out.printf("Area of the circle is %.3f\n",(Math.PI*r*r));   
+    
+    } 
+    
+}
