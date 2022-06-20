@@ -1,0 +1,17 @@
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter first value: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        int a = input.nextInt();
+        System.out.print("Enter second value: ");
+        int  b = input.nextInt();
+        int temp = a;
+         a = b;
+         b = temp;
+        
+        System.out.printf("After swapping: A = %d & B = %d\n",a,b);   
+    
+    } 
+    
+}
