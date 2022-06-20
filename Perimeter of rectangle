@@ -1,0 +1,15 @@
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter Length: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        double l = input.nextDouble();
+        System.out.print("Enter Width: ");
+        double w = input.nextDouble();
+        double P = 2*(l+w);
+        
+        System.out.printf("Perimeter of the rectangle is %.2f\n",P);   
+    
+    } 
+    
+}
