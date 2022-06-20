@@ -1,0 +1,16 @@
+public class GitHub {
+    
+    public static void main(String[] args) {
+        System.out.print("Enter your number: ");
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        int a = input.nextInt();
+        System.out.println("\tMultiplication table of "+a);
+        
+        for(int i=1; i<=10; i++){
+            System.out.printf("%d x %d = %d\n",a,i,(a*i));
+        }
+        
+    
+    } 
+    
+}
