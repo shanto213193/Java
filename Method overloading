@@ -1,0 +1,57 @@
+
+package Method;
+import java.util.Scanner;
+
+public class Shape {
+    
+    double height,length,base,radious; //declaring variables
+    
+    Shape(double height,double length,double base,double radious){ //creating a parameterized constructor which received the value that was passing from psvm/main function
+        this.length = length; // asign Local length variable to class length variable so that methos can get access
+        this.height = height;
+        this.base = base;
+        this.radious = radious;
+            
+    }
+    
+    double rectangle(){ //creating a method for area of rectangle
+        return length*base; //return the value  = area of rectangle
+    }
+    double square(){
+        return height*height;
+    }
+    double triangle(){
+        return .5*height*length*base;
+    }
+    double circle(){
+        
+        return Math.PI*radious*radious;
+    }    
+ 
+}
+public class GitHub {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter height: ");
+        double h = in.nextDouble();
+        System.out.printf("\nEnter base: ");
+         double b = in.nextDouble();
+         System.out.printf("\nEnter length: ");
+         double l = in.nextDouble();
+         System.out.printf("\nEnter radious: ");
+         double r = in.nextDouble();
+         
+         Shape a = new Shape(h,l,b,r); //creating a class object
+        
+        double a_r  = a.rectangle(); //calling a method for area of rectangle which is already created in class shape
+        System.out.print("\nArea of rectangle: ");
+        System.out.println(a_r);
+     System.out.printf("Area of square: %.2f\n",a.square());
+     System.out.printf("Area of triangle: %.2f\n",a.triangle());
+      System.out.printf("Area of circle: %.2f\n",a.circle());
+            
+    }      
+   
+    } 
+    
