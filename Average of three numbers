@@ -15,13 +15,13 @@ public class GitHub {
        java.util.Scanner in = new java.util.Scanner(System.in);
         System.out.print("Enter 1st Number: ");
         
-        double a = in.nextInt();
+        double a = in.nextDouble();
         System.out.print("Enter 2nd Number: ");
         
-        double b = in.nextInt();
+        double b = in.nextDouble();
         System.out.print("Enter 3rd Number: ");
         
-        double c = in.nextInt();
+        double c = in.nextDouble();
         
         System.out.println("Avg: "+ o.avg(a,b,c));
       
