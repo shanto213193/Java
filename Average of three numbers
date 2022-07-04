@@ -1,0 +1,32 @@
+
+package Average;
+
+public class GitHub {
+    
+    double avg(double a, double b, double c){
+        
+        return ((a+b+c)/3);
+        
+    }   
+
+    public static void main(String[] args) {
+        
+        GitHub o = new GitHub();
+       java.util.Scanner in = new java.util.Scanner(System.in);
+        System.out.print("Enter 1st Number: ");
+        
+        double a = in.nextInt();
+        System.out.print("Enter 2nd Number: ");
+        
+        double b = in.nextInt();
+        System.out.print("Enter 3rd Number: ");
+        
+        double c = in.nextInt();
+        
+        System.out.println("Avg: "+ o.avg(a,b,c));
+      
+      
+       
+    }
+    
+}
