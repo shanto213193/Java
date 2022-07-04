@@ -1,0 +1,17 @@
+
+package FindASCIIValue;
+
+import java.util.Scanner;
+
+
+public class GitHub {
+
+    public static void main(String[] args) {
+       Scanner in = new Scanner(System.in);
+        System.out.print("Enter Your Number: ");
+       
+       int a = in.nextInt();
+        System.out.printf("\nThe ASCII value of %d is %c\n",a,a);
+    }
+    
+}
