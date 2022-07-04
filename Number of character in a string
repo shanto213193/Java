@@ -1,0 +1,23 @@
+package String;
+
+public class GitHub {
+
+    int  counter(String s){
+            int count =0;
+      for (int i=0;i<s.length();i++)   {
+          count++;
+          
+      }   
+        return count;
+    }   
+
+    public static void main(String[] args) {
+        
+        GitHub o = new GitHub();
+       java.util.Scanner in = new java.util.Scanner(System.in);
+        System.out.print("Enter anything: ");
+        String s = in.nextLine();
+        System.out.println(o.counter(s));
+          
+}
+}
