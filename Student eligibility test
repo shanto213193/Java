@@ -1,0 +1,61 @@
+package EligibilityTest;
+
+public class Student {
+    String studentid;
+    String name;
+    String department;
+    int year;
+    float cgpa;
+    
+    Student(String studentid, String name, String department){
+        
+        this.studentid = studentid;
+        this.name = name;
+        this.department = department;
+    }
+    Student(String id, String n, String d, int y, float c){
+        
+     studentid = id;
+    name = n;
+    department = d;
+    year = y;
+    cgpa = c;
+    }
+    boolean thesis_eligibility(){
+        if(cgpa>=3.50)
+            return true;
+        else
+            return false;      
+    }
+  
+
+}
+public class StudentAccess {
+   
+    
+    public static void main(String[] args) {
+       java.util.Scanner in = new java.util.Scanner(System.in);
+         
+        System.out.print("Enter name: ");
+        String  n = in.nextLine();
+        System.out.printf("\nEnter id: ");
+        String i = in.nextLine();
+        System.out.printf("\nEnter department: ");
+        String d = in.nextLine();
+        System.out.printf("\nEnter year: ");
+        int y = in.nextInt();
+        System.out.printf("\nEnter Cgpa: ");
+        float c = in.nextFloat();
+ 
+     Student s = new Student(i,n,d,y,c); 
+     
+     if(s.thesis_eligibility()==true)
+            System.out.println("\nEligible For Thesis");
+     else 
+            System.out.println("Not eligible For Thesis");
+         
+    }
+        
+}
+
+
