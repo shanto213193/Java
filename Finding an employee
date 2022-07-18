@@ -1,0 +1,71 @@
+package Github;
+
+public class Person {
+    String name;
+    Person(String name){
+        this.name = name;
+    }
+    
+}
+
+public class Employee extends Person{
+   
+     
+ double A_Salary;
+ int S_Year;
+ String N_Insurance;
+ Employee(String name,double A_Salary, int S_Year, String N_Insurance ){
+     super(name);
+     this.A_Salary = A_Salary;
+     this.S_Year = S_Year;
+     this.N_Insurance = N_Insurance;
+    
+ }
+ void Show(){
+     
+     System.out.println("Employee name: "+name);
+     System.out.println("Annual Salary: "+A_Salary);
+     System.out.println("Started Year: "+S_Year);
+     System.out.println("National Insurance Id: "+N_Insurance);
+     
+ }
+ boolean EqualityTest(Employee o1, Employee o2){
+         
+     
+     return o1.N_Insurance.equals(o2.N_Insurance);  
+             
+    
+ }
+ 
+}
+public class Test {
+    
+    public static void main(String[] args) {
+        
+        Employee o = new Employee("Shanto",78500.2,2020,"1258sd");
+        Employee o2 = new Employee("Nasif",1930.2,2020,"25jd589");
+        o.Show();
+        System.out.println();
+        o2.Show();
+        System.out.println();
+        
+        boolean check = o.EqualityTest(o, o2);
+        if(check == true)
+            System.out.println("Both are the same person");
+        else 
+            System.out.println("They are different");
+            
+             
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
